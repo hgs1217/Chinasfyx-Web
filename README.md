@@ -8,6 +8,9 @@
 # install dependencies
 yarn
 
+# start fake dataset server
+(./server/) yarn run server
+
 # serve with hot reload at localhost:8080
 yarn run dev
 

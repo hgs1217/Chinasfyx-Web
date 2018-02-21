@@ -1,20 +1,14 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <div id="app">
-      <h1>Chinasyfx Web</h1>
-      <TodoList/>
-    </div>
+    <h1>Chinasyfx Web</h1>
+    <router-view/>
   </div>
 </template>
 
 <script>
-  import TodoList from './components/TodoList.vue'
-
   export default {
-    components: {
-      TodoList
-    }
+    name: 'app'
   }
 </script>
 

@@ -1,0 +1,128 @@
+{
+  "data": {
+    "posters": [
+      {
+        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/slider0yuan-psd.jpg"
+      },
+      {
+        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/2.jpg"
+      },
+      {
+        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/1.jpg"
+      },
+      {
+        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/3.jpg"
+      },
+      {
+        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/5.jpg"
+      },
+      {
+        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/6.jpg"
+      },
+      {
+        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/7.jpg"
+      }
+    ],
+    "coaches": [
+      {
+        "name": "赵宏宇",
+        "position": "康复训练导师",
+        "excerpt": [
+          "AFCC体适能高级培训导师",
+          "20多年行业经验，MBA硕士",
+          "运动康复师职业资格考评员"
+        ],
+        "img": "http://www.shtsn.com/wp-content/uploads/2017/04/赵宏宇-380x380.png",
+        "href": "http://www.shtsn.com/teacher/1036"
+      },
+      {
+        "name": "章毓燕",
+        "position": "康复训练导师",
+        "excerpt": [
+          "中国产后恢复首席培训师",
+          "国家健身教练职业资格培训师",
+          "国家健身教练职业资格考评员"
+        ],
+        "img": "http://www.shtsn.com/wp-content/uploads/2017/04/zhang-380x380.png",
+        "href": "http://www.shtsn.com/teacher/1039"
+      },
+      {
+        "name": "刘运衡",
+        "position": "康复训练导师",
+        "excerpt": [
+          "AFCC体适能高级培训师",
+          "中医康复理疗师",
+          "国家高级运动康复师"
+        ],
+        "img": "http://www.shtsn.com/wp-content/uploads/2017/04/刘运衡-380x380.png",
+        "href": "http://www.shtsn.com/teacher/1032"
+      },
+      {
+        "name": "吴保智",
+        "position": "形体训练导师",
+        "excerpt": [
+          "国家级健美运动员",
+          "国家健身教练高级指导员",
+          "AFCC健美健身资深导师"
+        ],
+        "img": "http://www.shtsn.com/wp-content/uploads/2017/04/吴磊-380x380.png",
+        "href": "http://www.shtsn.com/teacher/1378"
+      },
+      {
+        "name": "苏尚银",
+        "position": "形体训练导师",
+        "excerpt": [
+          "AFCC体适能私教培训师",
+          "国家健身教练职业资格培训师",
+          "AFCC体适能形体训练私人教练培训师"
+        ],
+        "img": "http://www.shtsn.com/wp-content/uploads/2017/04/苏尚银-380x380.png",
+        "href": "http://www.shtsn.com/teacher/1033"
+      },
+      {
+        "name": "孙启军",
+        "position": "形体训练导师",
+        "excerpt": [
+          "AFCC上海体适能健美健身培训师",
+          "AFCC上海体适能精英精英销售培训师",
+          "AFCC上海体适能私教职业经理人培训师"
+        ],
+        "img": "http://www.shtsn.com/wp-content/uploads/2017/04/sunqijun-380x380.jpg",
+        "href": "http://www.shtsn.com/teacher/1422"
+      },
+      {
+        "name": "苑家宸",
+        "position": "功能训练导师",
+        "excerpt": [
+          "AFCC上海体适能私人教练培训师",
+          "AFCC上海体适能运动康复培训师",
+          "中国手法医学会委员"
+        ],
+        "img": "http://www.shtsn.com/wp-content/uploads/2017/04/苑家宸-380x380.png",
+        "href": "http://www.shtsn.com/teacher/746"
+      },
+      {
+        "name": "陈迪",
+        "position": "功能训练导师",
+        "excerpt": [
+          "AFCC体适能私教培训师",
+          "AFCC普拉提教练培训师",
+          "AFCC体适能泰拳培训师"
+        ],
+        "img": "http://www.shtsn.com/wp-content/uploads/2017/04/陈迪-380x380.png",
+        "href": "http://www.shtsn.com/teacher/740"
+      },
+      {
+        "name": "郑思念",
+        "position": "功能训练导师",
+        "excerpt": [
+          "AFCC体适能健身教练培训师",
+          "国家健身教练职业资格培训师",
+          "东方职业健身交流大会年度培训师"
+        ],
+        "img": "http://www.shtsn.com/wp-content/uploads/2017/04/郑思念-380x380.png",
+        "href": "http://www.shtsn.com/teacher/737"
+      }
+    ]
+  }
+}
