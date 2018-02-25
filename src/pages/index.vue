@@ -1,16 +1,18 @@
 <template>
   <div>
-    <CoachItem></CoachItem>
+    <navigation-bar></navigation-bar>
+    <coach-item></coach-item>
   </div>
 </template>
 
 <script>
-  import CoachItem from '@/components/CoachItem'
+  import NavigationBar from '../components/NavigationBar'
+  import CoachItem from '../components/CoachItem'
 
   export default {
     name: 'Index',
     components: {
-      CoachItem
+      NavigationBar, CoachItem
     }
   }
 </script>
