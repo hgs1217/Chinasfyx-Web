@@ -22,7 +22,7 @@
 </script>
 
 <style lang="scss">
-  @import "../scss/variables.scss";
+  @import "../scss/variables";
 
   .input {
     width: 100%;
