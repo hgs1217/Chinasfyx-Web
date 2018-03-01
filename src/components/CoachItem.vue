@@ -26,7 +26,7 @@
     },
     created () {
       this.$http.get('http://127.0.0.1:9527/data').then((data) => {
-        console.log(data.body)
+        // console.log(data.body);
         if (data.body.code === 0) {
           this.coaches = data.body.body.coaches
         }

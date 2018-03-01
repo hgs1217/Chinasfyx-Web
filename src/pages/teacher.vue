@@ -1,29 +1,22 @@
 <template>
   <div>
     <navigation-bar></navigation-bar>
-    <span class="title">资深名师</span>
+    <banner :index="2"></banner>
   </div>
 </template>
 
 <script>
   import NavigationBar from '../components/NavigationBar'
+  import Banner from '../components/Banner'
 
   export default {
     name: 'Teacher',
     components: {
-      NavigationBar
+      NavigationBar, Banner
     }
   }
 </script>
 
 <style lang="scss" scoped>
-  .title {
-    width: 100%;
-    margin: 20px 0;
-    text-align: center;
-    font: {
-      weight: 700;
-      size: 20px;
-    }
-  }
+
 </style>

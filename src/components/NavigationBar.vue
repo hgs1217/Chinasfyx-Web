@@ -71,38 +71,38 @@
       }
     },
     computed: {
-      logoTransform () {
+      logoTransform() {
         return {
-          maxHeight: this.isTop ? '70px': '40px'
+          maxHeight: this.isTop ? '70px' : '40px'
         }
       },
-      widgetTransform () {
+      widgetTransform() {
         return {
           top: this.isTop ? '25px' : '10px'
         }
       },
-      numberTransform () {
+      numberTransform() {
         return {
           fontSize: this.isTop ? '20px' : '16px'
         }
       },
-      contentTransform () {
+      contentTransform() {
         return {
           fontSize: this.isTop ? '18px' : '14px'
         }
       },
-      formWrapTransform () {
+      formWrapTransform() {
         return {
           top: this.isTop ? '22px' : '5px'
         }
       },
-      linkTransform () {
+      linkTransform() {
         return {
           marginTop: this.isTop ? '' : '7px'
         }
       }
     },
-    mounted () {
+    mounted() {
       window.onscroll = () => {
         this.isTop = (document.documentElement.scrollTop || document.body.scrollTop) < 100;
       }
@@ -125,9 +125,10 @@
     left: 0;
     width: 100%;
     padding: 10px 0 15px 0;
+    z-index: 1000;
 
     color: #fff;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     font: {
       size: 16px;
       family: "Microsoft YaHei", arial, sans-serif;
@@ -139,12 +140,14 @@
     position: relative;
     margin: 0 $bar-margin;
   }
+
   .logo-img {
     display: inline-block;
     max-height: 70px;
     padding-left: $title-interval;
     transition: all 0.2s ease-in-out 0s;
   }
+
   .text-widget {
     display: inline-block;
     position: absolute;
@@ -153,6 +156,7 @@
     margin-left: 25px;
     transition: all 0.2s ease-in-out 0s;
   }
+
   .tel-number {
     position: relative;
     padding-left: 50px;
@@ -161,15 +165,18 @@
       size: 20px;
     }
   }
+
   .tel-number:before {
     position: absolute;
     content: url("http://www.shtsn.com/wp-content/themes/afcc/assets/images/header-icon.png");
     left: 0;
     top: -5px;
   }
+
   .tel-number-collapse:before {
     content: url("http://www.shtsn.com/wp-content/themes/afcc/assets/images/header-icon-1.png");
   }
+
   .tel-content {
     position: relative;
     margin-left: 20px;
@@ -178,6 +185,7 @@
       size: 18px;
     }
   }
+
   .header-form-wrap {
     position: absolute;
     right: 50px;
@@ -185,6 +193,7 @@
     min-width: 240px;
     transition: all 0.2s ease-in-out 0s;
   }
+
   .header-form-input {
     width: 100%;
     border: 0 none;
@@ -195,6 +204,7 @@
     font-size: 13px;
     line-height: 1.2;
   }
+
   .header-form-btn {
     background-color: transparent;
     border: 0 none;
@@ -202,6 +212,7 @@
     right: 0;
     top: 5px;
   }
+
   .header-form-btn:before {
     position: absolute;
     content: url("../assets/search.png");
@@ -216,6 +227,7 @@
       right: $bar-margin;
     }
   }
+
   .link-title {
     padding: 0 $title-interval;
     float: left;
@@ -230,9 +242,11 @@
     }
     transition: all 1s;
   }
+
   .link-title:hover {
     color: #b20000;
   }
+
   .left-border {
     border-left: 1px solid rgba(255, 255, 255, 0.3);
   }

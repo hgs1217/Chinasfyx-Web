@@ -150,7 +150,7 @@
         "background-image": "url(http://www.shtsn.com/wp-content/uploads/2017/03/content-slider.jpg)"
       },
       {
-        "background-image": "url(http: //www.shtsn.com/wp-content/uploads/2017/03/news-hold-banner.jpg)"
+        "background-image": "url(http://www.shtsn.com/wp-content/uploads/2017/03/news-hold-banner.jpg)"
       }
     ],
     "banners": [
@@ -188,8 +188,7 @@
       },
       {
         "title": "下载专区",
-        "title_en": "Resource",
-        "img": "http://www.shtsn.com/wp-content/uploads/2017/03/news-hold-banner.jpg"
+        "title_en": "Resource"
       }
     ]
   }
