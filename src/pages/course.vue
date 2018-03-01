@@ -1,17 +1,20 @@
 <template>
   <div>
     <navigation-bar></navigation-bar>
-    <span class="title">精彩课程</span>
+    <span></span>
+    <banner v-bind:index="1"></banner>
+    <!-- <span class="title">精彩课程</span> -->
   </div>
 </template>
 
 <script>
   import NavigationBar from '../components/NavigationBar'
-
+  import Banner from '../components/Banner'
   export default {
     name: 'Course',
     components: {
-      NavigationBar
+      NavigationBar,
+      Banner
     }
   }
 </script>

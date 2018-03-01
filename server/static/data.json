@@ -123,6 +123,74 @@
         "img": "http://www.shtsn.com/wp-content/uploads/2017/04/郑思念-380x380.png",
         "href": "http://www.shtsn.com/teacher/737"
       }
+    ],
+    "banners_back": [
+      {
+        "background-image": "url(http://www.shtsn.com/wp-content/uploads/2017/03/afcc.jpg)"
+      },
+      {
+        "background-image": "url(http://www.shtsn.com/wp-content/uploads/2017/03/course-slider.jpg)"
+      },
+      {
+        "background-image": "url(http://www.shtsn.com/wp-content/uploads/2017/03/师资banner.jpg)"
+      },
+      {
+        "background-image": "url(http://www.shtsn.com/wp-content/uploads/2017/03/new-slider.jpg)"
+      },
+      {
+        "background-image": "url(http://www.shtsn.com/wp-content/uploads/2017/03/student-slider.jpg)"
+      },
+      {
+        "background-image": "url(http://www.shtsn.com/wp-content/uploads/2017/03/zhaopin-slider.jpg)"
+      },
+      {
+        "background-image": "url(http://www.shtsn.com/wp-content/uploads/2017/03/zxbm-slider.jpg)"
+      },
+      {
+        "background-image": "url(http://www.shtsn.com/wp-content/uploads/2017/03/content-slider.jpg)"
+      },
+      {
+        "background-image": "url(http: //www.shtsn.com/wp-content/uploads/2017/03/news-hold-banner.jpg)"
+      }
+    ],
+    "banners": [
+      {
+        "title": "关于我们",
+        "title_en": "About us"
+      },
+      {
+        "title": "私教课程套餐",
+        "title_en": "Course"
+      },
+      {
+        "title": "资深名师",
+        "title_en": "Coach"
+      },
+      {
+        "title": "新闻中心",
+        "title_en": "News"
+      },
+      {
+        "title": "学员就业",
+        "title_en": "Students & career"
+      },
+      {
+        "title": "招聘就业",
+        "title_en": "Career"
+      },
+      {
+        "title": "在线报名",
+        "title_en": "Registration"
+      },
+      {
+        "title": "联系我们",
+        "title_en": "Contact"
+      },
+      {
+        "title": "下载专区",
+        "title_en": "Resource",
+        "img": "http://www.shtsn.com/wp-content/uploads/2017/03/news-hold-banner.jpg"
+      }
     ]
   }
 }
