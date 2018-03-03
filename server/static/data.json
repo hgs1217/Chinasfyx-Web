@@ -1,14 +1,11 @@
 {
   "data": {
-    "posters": [
+    "slides": [
       {
-        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/slider0yuan-psd.jpg"
+        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/2018022707161914.jpg"
       },
       {
         "img": "http://www.shtsn.com/wp-content/uploads/2018/02/2.jpg"
-      },
-      {
-        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/1.jpg"
       },
       {
         "img": "http://www.shtsn.com/wp-content/uploads/2018/02/3.jpg"
@@ -21,6 +18,9 @@
       },
       {
         "img": "http://www.shtsn.com/wp-content/uploads/2018/02/7.jpg"
+      },
+      {
+        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/2018022707174430.jpg"
       }
     ],
     "coaches": [
