@@ -1,16 +1,24 @@
 <template>
   <div class="slider">
-    <ul class="main-ul">
-      <li v-for="(slide, index) in slides" :key="index" class="slide-li">
-        <img class="slide-img" :src="slide.img"/>
-      </li>
-    </ul>
-    <div class="tp-arrow left-arrow"></div>
-    <div class="tp-arrow right-arrow"></div>
-    <div class="bullets-bar">
-      <div v-for="(slide, index) in slides" :key="bullet-index" class="bullet"
-           :style="{left: index*23 + 'px'}"></div>
+    <div class="main-ul" @mouseenter="onEnter" @mouseleave="onLeave">
+      <transition name="img-fade">
+        <div v-for="(slide, index) in slides" :key="'slide'+index" class="slide-li"
+             v-if="index === selectedIndex">
+          <img class="slide-img" :src="slide.img"/>
+        </div>
+      </transition>
     </div>
+    <transition name="fade">
+      <div class="icons" v-if="enterSlider" @mouseenter="onEnter" >
+        <div class="tp-arrow left-arrow" @click="onLeft"></div>
+        <div class="tp-arrow right-arrow" @click="onRight"></div>
+        <div class="bullets-bar">
+          <div v-for="(slide, index) in slides" :key="'bullet'+index"
+               :class="['bullet', index === selectedIndex ? 'bullet-selected' : '']"
+               :style="{left: index*23 + 'px'}" @click="onSelect(index)"></div>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -19,7 +27,9 @@
     name: "slider",
     data() {
       return {
-        slides: []
+        slides: [],
+        selectedIndex: 0,
+        enterSlider: false
       }
     },
     created() {
@@ -29,21 +39,40 @@
           this.slides = data.body.body.slides
         }
       })
+    },
+    methods: {
+      onSelect(index) {
+        this.selectedIndex = index;
+      },
+      onLeft() {
+        if (--this.selectedIndex < 0) this.selectedIndex += this.slides.length;
+      },
+      onRight() {
+        if (++this.selectedIndex >= this.slides.length) this.selectedIndex -= this.slides.length;
+      },
+      onEnter() {
+        this.enterSlider = true;
+      },
+      onLeave() {
+        this.enterSlider = false;
+      }
     }
   }
 </script>
 
 <style lang="scss" scoped>
+  $slider-height: 500px;
+
   @font-face {
     font-family: revicons;
     src: url("../assets/revicons.ttf")
   }
 
   .slider {
-    height: 500px;
-    max-height: 500px;
+    height: $slider-height;
+    max-height: $slider-height;
     margin: {
-      top: 0;
+      top: 100px;
       bottom: 0;
     }
   }
@@ -51,16 +80,13 @@
     overflow: hidden;
     height: 100%;
     width: 100%;
-    max-height: none;
-    padding: 0;
   }
   .slide-li {
+    position: absolute;
     width: 100%;
-    height: 100%;
-    visibility: inherit;
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 0;
+    height: $slider-height;
+    left: 0;
+    top: 100px;
   }
   .slide-img {
     background: {
@@ -71,8 +97,6 @@
     }
     width: 100%;
     height: 100%;
-    visibility: inherit;
-    opacity: 1;
     z-index: 20;
   }
   .tp-arrow {
@@ -138,5 +162,15 @@
   .bullet-selected {
     background: rgba(255, 255, 255, 1);
     border-color: rgba(0, 0, 0, 1);
+  }
+
+  .fade-enter-active , .fade-leave-active{
+    transition: opacity 0.5s;
+  }
+  .img-fade-enter-active , .img-fade-leave-active{
+    transition: opacity 1s;
+  }
+  .fade-enter, .fade-leave-to, .img-fade-enter, .img-fade-leave-to {
+    opacity: 0;
   }
 </style>
