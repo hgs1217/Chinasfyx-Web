@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="coach-item">
+    <web-wrapper :title="'资深名师'" :subTitle="'Coach'"/>
     <ul class="cont-ul">
       <li v-for="(item, index) in coaches" :key="index">
         <img :src="item.img" alt=""/>
@@ -17,8 +18,13 @@
 </template>
 
 <script>
+  import WebWrapper from '../components/WebWrapper'
+
   export default {
     name: 'CoachItem',
+    components: {
+      WebWrapper
+    },
     data () {
       return {
         coaches: []

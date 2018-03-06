@@ -72,7 +72,7 @@
     height: $slider-height;
     max-height: $slider-height;
     margin: {
-      top: 100px;
+      top: 128px;
       bottom: 0;
     }
   }
@@ -86,7 +86,7 @@
     width: 100%;
     height: $slider-height;
     left: 0;
-    top: 100px;
+    top: 128px;
   }
   .slide-img {
     background: {
@@ -119,7 +119,7 @@
     text-align: center;
   }
   .left-arrow {
-    top: 50%;
+    top: 55%;
     left: 0;
     transform: matrix(1, 0, 0, 1, 30, -20);
   }
@@ -128,7 +128,7 @@
     margin-left: -3px;
   }
   .right-arrow {
-    top: 50%;
+    top: 55%;
     left: 100%;
     transform: matrix(1, 0, 0, 1, -70, -20);
   }
