@@ -65,7 +65,7 @@
 
   @font-face {
     font-family: revicons;
-    src: url("../assets/revicons.ttf")
+    src: url("../../assets/revicons.ttf")
   }
 
   .slider {

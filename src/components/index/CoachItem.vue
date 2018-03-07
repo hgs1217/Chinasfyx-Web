@@ -18,7 +18,7 @@
 </template>
 
 <script>
-  import WebWrapper from '../components/WebWrapper'
+  import WebWrapper from './WebWrapper'
 
   export default {
     name: 'CoachItem',

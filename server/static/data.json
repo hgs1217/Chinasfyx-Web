@@ -190,6 +190,22 @@
         "title": "下载专区",
         "title_en": "Resource"
       }
+    ],
+    "news": [
+      {
+        "title": "如何鉴别健身教练资格证书的真假",
+        "date": "2018-02-28",
+        "content": "上海体适能健身教练培训基地无论在科研、师资、场地或是学员的就业情况，都处于行业的领先水平，多年的默默耕耘，为中国的健身事业做出了杰出的贡献。",
+        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/2018022803065998.png",
+        "href": "http://www.shtsn.com/ruhejianbiejianshenjiaolianzigezhengshudezhenjia"
+      },
+      {
+        "title": "健身教练培训 | 健身教练再不学点孕产知识就out啦",
+        "date": "2018-02-23",
+        "content": "上海体适能健身教练培训基地产后恢复相关的证书是由全国专业职业技术人才考试测评中心和中国人力资源专业人才资格教育考试中心联合颁发认证的全国专业职业技术人才资格登记证书（产后康复师）。",
+        "img": "http://www.shtsn.com/wp-content/uploads/2018/02/2018022405332617.jpg",
+        "href": "http://www.shtsn.com/jianshenjiaolianpeixun-jianshenjiaolianzaibuxuedianyunchanzhishijiuoutla"
+      }
     ]
   }
 }
