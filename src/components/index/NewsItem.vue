@@ -3,15 +3,20 @@
     <web-wrapper :title="'新闻中心'" :subTitle="'News'"/>
     <div class="news-content">
       <div class="news-main">
-        <div class="news-left" v-for="(item, index) in news" :key="'left'+index" v-if="index === 0">
-          <img class="left-image" :src="item.img"/>
+        <div class="news-left" v-for="(item, index) in news" :key="'left'+index"
+             v-if="index === 0">
+          <div class="left-img-div">
+            <img class="left-image" :src="item.img"/>
+          </div>
           <a class="left-title" :href="item.href">
             {{item.title}}&nbsp;&nbsp;&nbsp;&nbsp;发表于：{{item.date}}
           </a>
         </div>
         <div class="news-right">
           <div class="right-item" v-for="(item, index) in news" :key="'news'+index">
-            <img class="right-thumbnail" :src="item.img"/>
+            <div class="right-img-div">
+              <img class="right-thumbnail" :src="item.img"/>
+            </div>
             <div class="right-content">
               <div class="right-title">{{item.title}}</div>
               <div class="right-meta">发表于：{{item.date}}</div>
@@ -57,26 +62,38 @@
     margin: 20px 50px;
   }
   .news-main {
-    height: 350px;
+    height: 100%;
     width: 100%;
+    padding: 10px;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: start;
   }
-  .news-left, .new-right {
-    width: 50%;
+  .news-left {
+    width: 45%;
+    height: 100%;
     margin: 0 20px;
   }
+  .news-right {
+    width: 55%;
+    height: 100%;
+    margin: 0 20px;
+  }
+  .left-img-div {
+    height: 90%;
+    width: 100%;
+    text-align: center;
+  }
   .left-image {
-    margin: 10px;
-    max-height: 300px;
+    max-width: 100%;
+    height: 300px;
   }
   .left-title {
     width: 100%;
     height: 10%;
-    color: #000;
+    color: #666;
     font-size: 15px;
     text: {
       align: center;
@@ -90,16 +107,23 @@
 
   .right-item {
     width: 100%;
-    margin: 10px;
+    height: 50%;
+    margin-bottom: 50px;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: start;
   }
+  .right-img-div {
+    height: 100%;
+    width: 100px;
+    margin-right: 15px;
+  }
   .right-thumbnail {
     max-width: 100px;
-    margin-right: 1em;
+    max-height: 100px;
+    cursor: pointer;
   }
   .right-title {
     clear: none;
@@ -110,6 +134,7 @@
       family: "Microsoft YaHei", arial, sans-serif;
     }
     text-align: left;
+    cursor: pointer;
     transition: all 1s;
   }
   .right-title:hover {
